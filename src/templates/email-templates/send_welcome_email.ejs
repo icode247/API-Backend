@@ -1,0 +1,18 @@
+<%- include('./email_header.ejs') %>  
+  <body>
+    <div class="container">
+      <div class="content">
+       <p>Hello,</p> 
+       <p> We're excited to have you on board.</p> 
+    
+       <p>To get started, please verify your email address by entering the following OTP:</p> 
+    
+        <h3 style="text-align: center"><%= otp %></h3>
+    
+        <p>Thank you for joining us!</p>
+    
+        <%- include('./email_footer.ejs') %>  
+      </div>
+    </div>
+  </body>
+</html>

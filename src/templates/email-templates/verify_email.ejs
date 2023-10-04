@@ -1,0 +1,16 @@
+<%- include('./email_header.ejs') %>  
+  <body>
+    <div class="container">
+      <div class="content">
+       <p>Hello,</p> 
+       <p> We received a request to verify your email address for <%= serviceName %>. Please use the following OTP to complete the email verification process:</p> 
+    
+        <h3 style="text-align: center"><%= otp %></h3>
+    
+        <p>If you did not make this request, please ignore this email.</p>
+        
+        <%- include('./email_footer.ejs') %>  
+      </div>
+    </div>
+  </body>
+</html>
